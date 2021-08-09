@@ -1,0 +1,24 @@
+## Installation & Startup:
+- npm install
+- node app.js
+
+
+## REST API specifications:
+ 
+- get matches by team
+i.e http://localhost:3000/team?team=Manchester United
+
+- get matches by team filtered by status
+i.e. http://localhost:3000/team?team=Manchester United&status=played
+
+- get matches by tournament
+i.e. http://localhost:3000/tournament?tournament=fa
+
+- get matches by tournament filtered by status
+i.e. http://localhost:3000/tournament?tournament=fa&status=upcoming
+
+
+## Assumption:
+The data will be loaded on startup to the RAM, meaning that it wont be accessible during runtime.
+The computer running the service should be with enough RAM to handle the CSV input.
+I decided to store the data in a way I will be able to get every required query to the data with O(1).
