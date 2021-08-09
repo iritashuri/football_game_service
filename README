@@ -17,8 +17,10 @@ i.e. http://localhost:3000/tournament?tournament=fa
 - get matches by tournament filtered by status
 i.e. http://localhost:3000/tournament?tournament=fa&status=upcoming
 
+Note: I used query parameters in order to ease the REST API testing (so the URL can just be copy/pasted into the browser address bar) 
 
-## Assumption:
+
+## Additional assumption:
 The data will be loaded on startup to the RAM, meaning that it wont be accessible during runtime.
 The computer running the service should be with enough RAM to handle the CSV input.
 I decided to store the data in a way I will be able to get every required query to the data with O(1).
